@@ -1,0 +1,29 @@
+{
+  "users": {
+    "User1": {
+      "login": "gleb3d",
+      "last online": "18:40 20.10.2025",
+      "duration": "4h 32min"
+    },
+    "User2": {
+      "login": "vanyaOreshek",
+      "last online": "14:19 30.05.2025",
+      "duration": "17h 21min"
+    },
+    "User3": {
+      "login": "EtoBaobab",
+      "last online": "23:05 27.09.2025",
+      "duration": "1h 43min"
+    },
+    "User4": {
+      "login": "ShaganeShagane",
+      "last online": "11:10 21.05.2025",
+      "duration": "0h 10min"
+    },
+    "User5": {
+      "login": "maxBaza",
+      "last online": "07:15 13.10.2025",
+      "duration": "1h 15min"
+    }
+  }
+}

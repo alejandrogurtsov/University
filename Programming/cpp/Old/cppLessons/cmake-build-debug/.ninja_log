@@ -1,0 +1,20 @@
+# ninja log v5
+262	292	1761127986574635008	cppLessons	8df684cf2c9a53f1
+2	427	1759737661079690588	CMakeFiles/cppLessons.dir/main.cpp.o	c4a8a3f98df8b320
+0	56	1761202012475624278	build.ninja	7f9e47f6dcfb4fb2
+1	189	1761058045532929860	CMakeFiles/cppLessons.dir/taskTask.cpp.o	2af7cb4b59a6bd30
+2	255	1760614112043168220	CMakeFiles/cppLessons.dir/task.cpp.o	42f73c53942792ec
+0	464	1759737889096233982	CMakeFiles/cppLessons.dir/prostChisla.cpp.o	81efd09762a59849
+1	184	1759811366918408217	CMakeFiles/cppLessons.dir/lesson.cpp.o	4f83dcadb7e8d1b9
+1	207	1760875382472809492	CMakeFiles/cppLessons.dir/task02.cpp.o	3bffa1a38611cf4
+1	208	1760616333051855938	CMakeFiles/cppLessons.dir/taskLesson.cpp.o	e64147245c3af2fd
+1	190	1759812818977246583	CMakeFiles/cppLessons.dir/lesson2.cpp.o	723497520551e612
+2	262	1761127986543924517	CMakeFiles/cppLessons.dir/task03.cpp.o	cc1b0f46ca65f20b
+0	258	1761202017377289033	CMakeFiles/cppLessons.dir/taskTask.cpp.o	2af7cb4b59a6bd30
+259	374	1761202017493542890	cppLessons	ec46d35a8c528b11
+2	277	1761268717531700061	CMakeFiles/cppLessons.dir/taskTask.cpp.o	2af7cb4b59a6bd30
+277	382	1761268717636814548	cppLessons	ec46d35a8c528b11
+2	280	1761269128163047443	CMakeFiles/cppLessons.dir/taskTask.cpp.o	2af7cb4b59a6bd30
+280	309	1761269128193156931	cppLessons	ec46d35a8c528b11
+2	263	1761271420167616912	CMakeFiles/cppLessons.dir/taskTask.cpp.o	2af7cb4b59a6bd30
+264	294	1761271420198163414	cppLessons	ec46d35a8c528b11

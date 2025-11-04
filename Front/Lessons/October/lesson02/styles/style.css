@@ -1,0 +1,92 @@
+body {
+  background-color: darkgrey;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.cards-row {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  border: 2px solid red;
+  position: relative;
+  transition: top 0.3s;
+}
+
+.card:hover {
+  top: -20px;
+}
+
+.top-m {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18pt;
+  color: red;
+}
+
+.top-m::before {
+  content: 'A';
+}
+
+.top-m1 {
+  width: 25px;
+  height: 25px;
+  margin-top: 2px;
+}
+
+.bottom-m {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: 18pt;
+  color: red;
+  transform: rotate(180deg);
+}
+
+.bottom-m::after {
+  content: 'A';
+  order: 2;
+}
+
+.bottom-m1 {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 2px;
+  order: 1;
+}
+
+.m1 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.second, .fourth{
+  border: 2px solid black;
+}
+
+.second .top-m,
+.fourth .top-m {
+  color: black;
+}
+
+.second .bottom-m,
+.fourth .bottom-m {
+  color: black;

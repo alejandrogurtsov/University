@@ -1,0 +1,36 @@
+table{
+	border-collapse: collapse;
+	font-family: "Arial", 'sans-serif';
+	font-size: 18px;
+	margin: 0 auto;
+	width: 30%;
+}
+
+body{
+	background-color: #d3d3d3;
+}
+
+caption{
+	caption-side: bottom;
+	padding: 7px;
+}
+
+td{
+	border: 1px solid #660708;
+	padding: 10px;
+	background-color: #f5484b;
+	color: #161a1d;
+}
+
+.head{
+	border-bottom: 3px solid #660708;
+	padding: 10px;
+}
+
+.center{
+	text-align: center;
+}
+
+ th{
+ 	padding: 7px;
+ }

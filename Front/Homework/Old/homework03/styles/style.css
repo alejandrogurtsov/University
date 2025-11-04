@@ -1,0 +1,47 @@
+body {
+    font-family: "Arial",sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+   color: #1c1c1c;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 30px;
+}
+
+td img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 5px auto;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+td img:hover {
+    transform: scale(1.05);
+}
+
+td p {
+    margin: 0;
+    padding: 7px;
+    font-size: 16px;
+    color: #1c1c1c;
+    transition: transform 0.3s;
+}
+
+td p:hover{
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #1c1c1c;
+}

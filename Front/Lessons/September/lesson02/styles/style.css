@@ -1,0 +1,33 @@
+body{
+	background-color: antiquewhite;
+	font-family: "Arial", "serif-sans";
+	font-size: 18pt;
+	color: #0C292B;
+}
+table{
+	border: 2px solid #A61D00;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 60%;
+
+}
+td, th{
+	border: 1px solid #A61D00;
+	padding: 10px;
+
+}
+.align {
+	text-align: center;
+}
+.head{
+	color: white;
+	background-color: darkblue;
+}
+
+.row1{
+	background-color: skyblue;
+}
+
+.row2{
+	background-color: lightblue;
+}

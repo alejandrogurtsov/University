@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Форма</title>
+	<link rel='stylesheet' type='text/css' href='./style/style.css'>
+</head>
+<body>
+	<form action='#' method='get' oninput="forrange.value=range.value">
+		<fieldset>
+			<legend>Основная информация</legend>
+			<div>
+				<label>ФИО</label>
+				<input type="text" required>
+			</div>
+			<div>
+				<label>Эл. почта</label>
+				<input type="text" required>
+			</div>
+			<div>
+				<label>Ваш возраст</label>
+				<input type="number" min='16' max='60' value='18'>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Ваше мнение об обучении</legend>
+			<table>
+				<tr>
+					<td><label>Насколько вам нравится обучение?</label></td>
+					<td>
+						<input type="range" min='1' max='10' value='7' id='range'>
+						<output name='forrange'>7</output>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Какую оценку вы бы поставили организации учебного процесса?</label></td>
+					<td>
+						<select name='org_rating'>
+							<option value='great'>Отлично</option>
+							<option value='good' selected>Хорошо</option>
+							<option value='udov'>Удовлетворительно</option>
+							<option value='bad'>Плохо</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Какие предметы вам наиболее интересны?</label></td>
+					<td>
+						<div><input class='intrst' type='checkbox' id='math'>
+						<label for='math'>Математика</label></div>
+
+						<div><input class='intrst' type='checkbox' id='prog'>
+						<label for='prog'>Программирование</label></div>
+
+						<div><input class='intrst' type='checkbox' id='yarsk'>
+						<label for='yarsk'>ЯРСК</label></div>
+
+						<div><input class='intrst' type='checkbox' id='inf'>
+						<label for='inf'>Информатика</label></div>
+
+						<div><input class='intrst' type='checkbox' id='angl'>
+						<label for='angl'>Английский язык</label></div>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Вы довольны преподавателями?</label></td>
+					<td>
+						<input type='radio' name='pr' value='yes' id='да' checked>
+						<label for='да'>Да</label>
+						<input type='radio' name='pr' value='no' id='нет'>
+						<label for='нет'>Нет</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Что вы хотите получить от университета?</label></td>
+					<td><textarea id='comment' rows='4'></textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<input type="submit" value='Отправить'>
+	</form>
+</body>
+</html>

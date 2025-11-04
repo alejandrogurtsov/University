@@ -1,0 +1,56 @@
+Sub РассчитатьДоходы()
+    Dim ws As Worksheet
+    Dim i As Integer
+    Dim Доход As Double
+    Dim Расход As Double
+    Dim Прибыль As Double
+    Dim Налог As Double
+    Dim LastRow As Integer
+    
+    Set ws = ThisWorkbook.Sheets("Лист2")
+    
+    LastRow = 13
+    
+    Randomize
+    
+    For i = 2 To LastRow
+        Доход = Int(Rnd * 100000)
+        Расход = Int(Rnd * 100000)
+        
+        ws.Cells(i, 2).Value = Доход
+        ws.Cells(i, 3).Value = Расход
+        
+        Прибыль = Доход - Расход
+        ws.Cells(i, 4).Value = Прибыль
+        
+        If Прибыль < 0 Then
+            ws.Cells(i, 4).Interior.Color = RGB(255, 80, 80)
+            Налог = 0
+        Else
+            ws.Cells(i, 4).Interior.ColorIndex = xlNone
+            Налог = Прибыль * 0.13
+        End If
+
+        ws.Cells(i, 5).Value = Налог
+    Next i
+    
+End Sub
+
+Sub Очистить()
+    Dim ws As Worksheet
+    Dim i As Integer
+    Dim j As Integer
+    Dim LastRow As Integer
+    
+    Set ws = ThisWorkbook.Sheets("Лист2")
+    LastRow = 13
+    
+    For i = 2 To LastRow
+        For j = 2 To 5
+            ws.Cells(i, j).ClearContents
+            ws.Cells(i, j).Interior.ColorIndex = xlNone
+        Next j
+    Next i
+    
+    
+End Sub

@@ -1,0 +1,36 @@
+body{
+	background-color: antiquewhite;
+	font-family: Arial, sans-serif;
+	font-size: 20pt;
+	color: #0e0e0e;
+}
+
+.block-example{
+	display: block;
+}
+
+select {
+	display: block;
+	font-size: 18pt;
+}
+
+input{
+	font-size: 18pt;
+
+}
+
+form{
+	border: 2px solid black;
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px 30px;
+}
+
+h1{
+	text-align: center;
+}
+ 
+textarea{
+	resize: none;
+	font-size: 18pt;
+}

@@ -1,0 +1,9 @@
+# ninja log v5
+1	204	1760061537405347580	CMakeFiles/arraysHomework.dir/task03.cpp.o	4279220b230e1d1f
+201	226	1760598257393866493	arraysHomework	df709279acc873e2
+3	474	1760540455936738742	CMakeFiles/arraysHomework.dir/task02.cpp.o	6b26a92b0d4e6645
+1	262	1760592192310481354	CMakeFiles/arraysHomework.dir/task04.cpp.o	e7cc7aa6b41692eb
+1	201	1760598257367277937	CMakeFiles/arraysHomework.dir/task05.cpp.o	49eec3218efee91b
+4	78	1760930092289123450	build.ninja	31f9a4f9dd89b521
+2	190	1759818164862553376	CMakeFiles/arraysHomework.dir/main.cpp.o	7369d352fab525f5
+1	254	1760593686948155094	CMakeFiles/arraysHomework.dir/task06.cpp.o	4a1dcf44abf0bcf3

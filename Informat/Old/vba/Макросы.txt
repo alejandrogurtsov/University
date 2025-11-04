@@ -1,0 +1,53 @@
+﻿Sub proba3()
+Dim a1, a3, a4, a5 As Integer
+Dim r1 As Word.Range
+' Range размером с документ
+    Set r1 = ActiveDocument.Range
+    a1 = r1.Tables.Count
+    a2 = r1.InlineShapes.Count
+    a3 = r1.OMaths.Count
+    MsgBox a1, , "кол-во таблиц"
+    MsgBox a2, , "кол-во картинок"
+    MsgBox a3, , "кол-во формул"
+End Sub
+
+Sub DeleteFirstSentenceInParagraphs()
+    Dim par As Paragraph
+    Dim firstSent As Range
+    
+    For Each para In ActiveDocument.Paragraphs
+
+        If Len(para.Range.Text) > 1 Then
+            Set firstSent = para.Range.Sentences(1)
+            firstSent.Delete
+        End If
+    Next para
+End Sub
+
+Sub CenterAllPictures()
+    Dim ils As InlineShape
+
+    For Each ils In ActiveDocument.InlineShapes
+        ils.Range.ParagraphFormat.Alignment = wdAlignParagraphCenter
+    Next ils
+End Sub
+
+Sub ApplyStylesToEvenOddParagraphs()
+    Dim para As Paragraph
+    Dim i As Long
+    
+    i = 1
+    For Each para In ActiveDocument.Paragraphs
+    
+        If Len(Trim(para.Range.Text)) > 1 Then
+            If i Mod 2 = 0 Then
+                para.Range.Style = ActiveDocument.Styles("Строгий")
+            Else
+                para.Range.Style = ActiveDocument.Styles("Обычный")
+            End If
+            i = i + 1
+        End If
+    Next para
+End Sub
+
+

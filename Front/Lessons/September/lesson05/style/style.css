@@ -1,0 +1,25 @@
+body{
+	background-color: azure;
+	font-family: Arial, sans-serif;
+	font-size: 18pt;
+	color: darkblue;
+}
+.float-container{
+	border: 2px solid darkblue;
+	padding: 20px;
+}
+
+.float-container::after {
+	display: block;
+	content:"";
+	clear: both;
+}
+
+.float{
+	float: left;
+	border: 1px solid darkblue;
+	width: 30%;
+	height: 200px;
+	background-color: blue;
+	margin-right: 30px;
+}

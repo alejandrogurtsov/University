@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Формы</title>
+	<link rel='stylesheet' type='text/css' href='./style/style.css'>
+</head>
+<body>
+	<h1>Форма опроса</h1>
+	<form action='#' method="get" oninput="forrange.value=range.value">
+		<div>
+			<label>ФИО</label>
+			<input type='text' required>
+		</div>
+
+		<label class='block-example'>Сфера деятельности</label>
+		<select name='sphere'>
+			<option value='IT'>IT</option>
+			<option value='med'>Медицина</option>
+			<option value='ped'>Педагогика</option>
+			<option value='mash'>Машиностроение</option>
+			<option value='agro'>Сельское хозяйство</option>
+			<option value='other'>Другое</option>
+		</select>
+
+		<div>
+			<label>Сколько вам лет?</label>
+			<div>
+				<input type='radio' name='age' value='1' id='age18'>
+				<label for='age18'>от 18 до 30 лет</label>
+			</div>
+			<div>
+				<input type='radio' name='age' value='2' id='age31'>
+				<label for='age31'>от 31 до 45 лет</label>
+			</div>
+			<div>
+				<input type='radio' name='age' value='3' id='age46'>
+				<label for='age46'>от 46 до 65 лет</label>
+			</div>
+			<div>
+				<input type='radio' name='age' value='4' id='age66'>
+				<label for='age66'>от 66 до 80 лет</label>
+			</div>
+		</div>
+
+		<div>
+			<input type='checkbox' checked>
+			<label>Хочу получать информацию</label>
+		</div>
+		<div>
+			<label>Напишите отзыв</label>
+			<textarea rows='10' cols='40'></textarea>
+		</div>
+		<div>
+			<label>10</label>
+			<input type="range" min='10' max='100' id='range'>
+			<label>100</label>
+			<output name='forrange'>55</output>
+		</div>
+		<input type="submit">
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+# ninja log v5
+2	195	1761978599678065182	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+1	206	1761909495515534777	CMakeFiles/ssBitSdvigi.dir/turing3.cpp.o	730fe438934b32d9
+195	222	1761978599706065274	ssBitSdvigi	c56e8ff0067996ca
+2	267	1761904435118249953	CMakeFiles/ssBitSdvigi.dir/main.cpp.o	ad96db918af01da0
+2	203	1761978619201407384	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+203	230	1761978619229739891	ssBitSdvigi	c56e8ff0067996ca
+2	460	1762053443148440579	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+460	561	1762053443251961679	ssBitSdvigi	c56e8ff0067996ca
+1	196	1762053458656972321	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+196	220	1762053458681837322	ssBitSdvigi	c56e8ff0067996ca
+1	237	1762053518687818677	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+238	271	1762053518720844332	ssBitSdvigi	c56e8ff0067996ca
+2	247	1762053769333450353	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+247	274	1762053769361273368	ssBitSdvigi	c56e8ff0067996ca
+2	198	1762053777768463132	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+199	224	1762053777794683109	ssBitSdvigi	c56e8ff0067996ca
+2	201	1762053919094120749	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+202	226	1762053919119811811	ssBitSdvigi	c56e8ff0067996ca
+2	199	1762053935663132136	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+199	224	1762053935689292822	ssBitSdvigi	c56e8ff0067996ca
+2	212	1762054213330882835	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+212	238	1762054213358033351	ssBitSdvigi	c56e8ff0067996ca
+1	192	1762054229857242036	CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o	af511a2277decfa7
+192	216	1762054229882120974	ssBitSdvigi	c56e8ff0067996ca

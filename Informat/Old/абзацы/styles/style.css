@@ -1,0 +1,18 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 40px;
+}
+
+.russian {
+  text-align: justify;
+  text-indent: 1.25cm;
+  margin-bottom: 30px;
+}
+
+.swiss {
+  text-align: left;
+  text-indent: 0;          
+  margin-bottom: 20px;     
+}
