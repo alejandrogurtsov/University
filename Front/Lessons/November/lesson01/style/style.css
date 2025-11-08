@@ -1,0 +1,12 @@
+body{
+	background-color: aliceblue;
+	font-family: "Lucida Sans" sans-serif;
+	font-size: 18pt;
+
+}
+
+div{
+	width: 400px;
+	height: 400px;
+	background-image: repeating-linear-gradient(red 10%, yellow 20%, green 30%, yellow 40%, red 50%);
+}
