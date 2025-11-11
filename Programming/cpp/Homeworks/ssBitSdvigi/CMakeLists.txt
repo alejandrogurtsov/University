@@ -3,4 +3,4 @@ project(ssBitSdvigi)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ssBitSdvigi mantisDouble.cpp)
+add_executable(ssBitSdvigi mantisExp.cpp)

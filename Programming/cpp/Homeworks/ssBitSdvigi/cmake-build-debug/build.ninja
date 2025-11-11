@@ -46,8 +46,8 @@ cmake_ninja_workdir = /Users/calexzz/Desktop/University/Programming/cpp/Homework
 
 build cmake_object_order_depends_target_ssBitSdvigi: phony || CMakeFiles/ssBitSdvigi.dir
 
-build CMakeFiles/ssBitSdvigi.dir/mantisDouble.cpp.o: CXX_COMPILER__ssBitSdvigi_Debug /Users/calexzz/Desktop/University/Programming/cpp/Homeworks/ssBitSdvigi/mantisDouble.cpp || cmake_object_order_depends_target_ssBitSdvigi
-  DEP_FILE = CMakeFiles/ssBitSdvigi.dir/mantisDouble.cpp.o.d
+build CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o: CXX_COMPILER__ssBitSdvigi_Debug /Users/calexzz/Desktop/University/Programming/cpp/Homeworks/ssBitSdvigi/mantisExp.cpp || cmake_object_order_depends_target_ssBitSdvigi
+  DEP_FILE = CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk -mmacosx-version-min=15.7 -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/ssBitSdvigi.dir
   OBJECT_FILE_DIR = CMakeFiles/ssBitSdvigi.dir
@@ -60,7 +60,7 @@ build CMakeFiles/ssBitSdvigi.dir/mantisDouble.cpp.o: CXX_COMPILER__ssBitSdvigi_D
 #############################################
 # Link the executable ssBitSdvigi
 
-build ssBitSdvigi: CXX_EXECUTABLE_LINKER__ssBitSdvigi_Debug CMakeFiles/ssBitSdvigi.dir/mantisDouble.cpp.o
+build ssBitSdvigi: CXX_EXECUTABLE_LINKER__ssBitSdvigi_Debug CMakeFiles/ssBitSdvigi.dir/mantisExp.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk -mmacosx-version-min=15.7
   OBJECT_DIR = CMakeFiles/ssBitSdvigi.dir
   POST_BUILD = :
