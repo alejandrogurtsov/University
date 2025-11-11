@@ -1,34 +1,89 @@
 body{
 	background-color: darkgray;
-	font-family: "Lucida Sans" sans-serif;
-	font-size: 18pt;
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 16pt;
 
 }
 
 .flags {
 	display: flex;
-	width: 1000px;
+	width: 1200px;
 	height: 450px;
 	flex-wrap: wrap;
 	margin: 0 auto;
-
+	justify-content: center;
+	gap: 25px;
 }
 
 .flag{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 300px;
 	height: 200px;
+	margin: 10px;
+}
+
+span{
+	margin-top: 205px;
+	color: white;
+
+}
+
+.trinidad > span {
+	margin-top: 190px;
+}
+
+
+.ireland{
+	background-image: linear-gradient(to right,
+		rgb(17,144,55) 33.33%,
+		white 33.33%, white 66.66%,
+		rgb(251,98,8) 66.66%);
+}
+
+.trinidad{
+	background-image: linear-gradient(-135deg,
+		rgb(192,0,30) 37.5%, 
+		white 37.5%, white 41.67%,
+		black 41.67%, black 58.33%,
+		white 58.33%, white 62.5%, 
+		rgb(192,0,30) 62.5%);
+}
+
+.trinidad{
+	width: 300px;
+	height: 180px;
 	background-color: black;
 	margin: 10px;
 }
 
-.ireland{
-	background-image: linear-gradient(to right,rgb(17,144,55) 33%, white 33%, white 67%, rgb(251,98,8) 67%);
+.congo{
+	background-image: linear-gradient(135deg,
+		rgb(19,135,51) 40%,
+		rgb(247,214,24) 40%, rgb(247,214,24) 60%,
+		rgb(238,44,44) 60%)    
 }
 
-.cote{
-	background-image: linear-gradient(to right,rgb(192,0,30) 35%, white 35%, white 70%, rgb(192,0,30) 70%);
+.mauritius{
+	background-image: linear-gradient(to bottom,
+		rgb(227,12,45) 25%,
+		rgb(20,20,91) 25%, rgb(20,20,91) 50%,
+		rgb(254,207,8) 50%, rgb(254,207,8) 75%,
+		rgb(20,151,64) 75%);
+}
+
+.botswana{
+	background-image: linear-gradient(to bottom,
+		rgb(56,139,200) 37.5%, 
+		white 37.5%, white 41.67%,
+		black 41.67%, black 58.33%,
+		white 58.33%, white 62.5%, 
+		rgb(56,139,200) 62.5%);
 }
 
 .madagaskar{
-	background-image: linear-gradient(to right, white 33%, rgb(249,37,39) 33%);
+	background-image: linear-gradient(to right, white 33.33%, transparent 33.33%), 
+	linear-gradient(to bottom, rgb(246,36,39) 50%, rgb(16,109,45) 50%);
+	
 }
