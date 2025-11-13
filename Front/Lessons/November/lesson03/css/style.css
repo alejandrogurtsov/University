@@ -1,0 +1,27 @@
+body{
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 16pt;
+	background-color: darkgrey;
+}
+
+.red, .green{
+	width: 100px;
+	height: 100px;
+	margin: 25px 150px;
+	background-color: yellow;
+	border: 1px solid yellow;
+	transition-duration: 3s;
+	transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.red:hover{
+	background-color: red;
+	border: 5px solid blue;
+	width: 200px;
+	height: 300px;
+	transform: translateX(200px) rotate(360deg);
+	transition-duration: 3s;
+	transition-property: all;
+	/*transition-delay: 0s 3s;*/
+	transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
