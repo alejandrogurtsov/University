@@ -1,0 +1,81 @@
+body{
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 16px;
+  background-color: lightgray;
+}
+
+.check-buttons {
+  list-style: none;
+  padding: 0;
+}
+
+.check-buttons li {
+  margin: 12px 0;
+  position: relative;
+}
+
+.check-buttons input {
+  display: none;
+}
+
+.check-buttons label {
+  display: inline-block;
+  padding: 10px 16px 10px 40px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background: #f5f5f5;
+  transition: background 0.3s transform 0.2s, box-shadow 0.2s;
+}
+
+.check-buttons label:hover {
+  background: #e0f7ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.check-buttons label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #444;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  opacity: 1;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.check-buttons label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 45%;
+  width: 14px;
+  height: 8px;
+
+  border-left: 3px solid green;
+  border-bottom: 3px solid green;
+
+  transform: translateY(-50%) scale(0) rotate(-360deg);
+
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
+}
+
+.check-buttons input:checked + label::after {
+  transform: translateY(-50%) scale(1) rotate(-45deg);
+  opacity: 1;
+}
+
+.check-buttons input:checked + label::before {
+  transform: translateY(-50%) scale(0);
+  opacity: 0;
+}
+
+.check-buttons input:checked + label {
+  background: #d1ffd1;
+  box-shadow: 0 4px 10px rgba(0, 150, 0, 0.3);
+}

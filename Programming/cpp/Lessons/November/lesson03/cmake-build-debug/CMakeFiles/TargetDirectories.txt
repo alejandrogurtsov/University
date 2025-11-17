@@ -1,0 +1,3 @@
+/Users/calexzz/Desktop/University/Programming/cpp/Lessons/November/lesson03/cmake-build-debug/CMakeFiles/lesson03.dir
+/Users/calexzz/Desktop/University/Programming/cpp/Lessons/November/lesson03/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/calexzz/Desktop/University/Programming/cpp/Lessons/November/lesson03/cmake-build-debug/CMakeFiles/rebuild_cache.dir
