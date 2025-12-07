@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<title>Генерация элементов</title>
+</head>
+<body id="body">
+<div class="un-list-div light" id="listDiv">
+	<h2 class="list-title">Список продуктов:</h2>
+	<p class="list-desc">Небольшой список покупок, чтобы ничего не забыть.</p>
+</div>
+
+<script>
+    function toggleTheme() {
+        document.body.classList.toggle("dark");
+    }
+
+	const list_div = document.getElementById("listDiv");
+	const u_list = document.createElement("ul");
+
+	u_list.className = "new-ulist";
+	list_div.appendChild(u_list);
+
+	while (true){
+		let text = prompt("Составим список продуктов. Что нужно купить? (вводить по одному) (Для прерывания ввода - ESC или пустая строка)");
+		if (!text) break;
+
+		let li = document.createElement("li");
+		li.className = "list-item";
+		li.textContent = text;
+		u_list.appendChild(li);
+	}
+
+    let button = document.createElement("button");
+    button.className = "theme-btn";
+    button.textContent = "Сменить тему";
+    list_div.appendChild(button);
+
+    button.addEventListener("click", toggleTheme);
+    document.querySelector(".list-title").addEventListener("click", toggleTheme);
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+/Users/calexzz/Desktop/University/Programming/cpp/Homeworks/rekursiya/cmake-build-debug/CMakeFiles/rekursiya.dir
+/Users/calexzz/Desktop/University/Programming/cpp/Homeworks/rekursiya/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/calexzz/Desktop/University/Programming/cpp/Homeworks/rekursiya/cmake-build-debug/CMakeFiles/rebuild_cache.dir

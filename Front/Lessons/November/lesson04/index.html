@@ -1,11 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<meta charset="UTF-8">
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<title>Document</title>
 </head>
 <body>
+<script>
+	let input = prompt("Задача1 Введите n:");
+    if (input === null) {
+        alert("Отменено");
+    }else{
+        let n = Number(input);
+        if (n<1){
+            alert("Введите число >= 1")
+		} else{
+			let squares = [];
+			for (let k = 1; k <= n; k++)
+                squares.push(k * k);
+            console.log()
+			alert("Точные квадраты натуральных чисел <= " + n+ ":\n" + squares.join(", "));
+		}
+	}
+
+    let a = Number(prompt("Задача2 Введите число а (a<b):"));
+    let b = Number(prompt("Введите число b (b>a):"));
+
+    let sum = 0;
+    let count = 0;
+
+    for (let x=a; x<=b; x++){
+        if (x % 3 === 0) {
+            sum += x;
+            count++;
+		}
+	}
+
+    if (count === 0) {
+        alert("На отрезке нет чисел, делящихся на 3.");
+    } else {
+        let avg = sum / count;
+        alert("Среднее арифметическое чисел, делящихся на 3: " + avg);
+    }
+
+    let n = Number(prompt("Задача3 Введите число N:"));
+    if ((n & (-n)) === n){
+        alert("YES")
+	}else{
+        alert("NO")
+	}
+
+    function camelize(str) {
+        var parts = str.split("-");
+
+        for (var i = 1; i < parts.length; i++) {
+            parts[i] = parts[i].charAt(0).toUpperCase() + parts[i].slice(1);
+        }
+
+        return parts.join("");
+    }
+    let text = prompt("Задача 4: Введите текст:");
+    alert(camelize(text));
+
+</script>
 
 </body>
 </html>

@@ -1,0 +1,19 @@
+body{
+    font-family: "Helvetica", sans-serif;
+    font-size: 16pt;
+    background-color: aliceblue;
+}
+
+.u_list ul{
+    display: none;
+    margin-left: 20px;
+}
+
+.u_list li {
+    cursor: pointer;
+    user-select: none;
+}
+
+.u_list li.open > ul{
+    display: block;
+}

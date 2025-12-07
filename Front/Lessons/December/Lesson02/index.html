@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link href = './css/style.css' rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+
+<ul class = "u_list">
+	<li class="toggler">Машины
+		<ul>
+			<li class="toggler">Легковые
+				<ul>
+					<li>Corolla</li>
+					<li>Pajero</li>
+				</ul>
+			</li>
+			<li class="toggler">Грузовые
+				<ul>
+					<li>Камаз</li>
+					<li>Белаз</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li class="toggler">Самолеты
+		<ul>
+			<li>Пассажирские</li>
+			<li>Грузовые</li>
+		</ul>
+	</li>
+	<li>Мотоциклы</li>
+</ul>
+<script>
+    document.querySelectorAll(".toggler").forEach(li => {
+        li.addEventListener("click", function (f) {
+            f.stopPropagation();
+            let child_ul = li.querySelector(":scope > ul");
+            if (!child_ul) return;
+            child_ul.style.display = child_ul.style.display === "none" ? "block" : "none";
+        });
+
+        let child_ul = li.querySelector(":scope > ul");
+        if (child_ul) {
+            child_ul.style.display = "none";
+        }
+    });
+</script>
+
+</body>
+</html>
