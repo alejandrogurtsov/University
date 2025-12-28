@@ -5,44 +5,31 @@
 
 using namespace std;
 
-bool prime(long long n);
+const int DIGITS = 500; //кол-во знаков после запятой
 
-void read(ifstream &in, long long g_idx);
+bool prime(long long n);
+void exp(int e[]);
 
 int main(void) {
     setlocale(LC_ALL,"RU");
+    int e[DIGITS]={0};
+    exp(e);
 
-    char str[11] = {};
-    int str_idx=0;
-    long long g_idx=0;
-
-    ifstream in("e2mil.txt");
-    if (!in.is_open()){
-        cout<<"Не удалось прочитать из файла"<<endl;
-    }else{
-        read(in,0);
+    for (int i = 0; i <= DIGITS - 10 + 1; i++) {
+        long long int num = 0;
+        for (int j = 0; j < 10; j++) {
+            num = num * 10 + e[i + j];
+        }
+        if (prime(num)){
+            cout<<num<<" "<<i<<"-позиция";
+            break;
+        }
     }
-    in.close();
-
-//    for (int i = 0; i<11; i++){
-//        cout<<str[i]<<" ";
-//    }
-//    cout<<endl;
-
-//    long long number = 0;
-//    for(int i = 0; i<10; i++) {
-//        number = number * 10 + (str[i] - '0');
-//    }
-//    cout<<number<<endl;
 
     return 0;
 }
 
-void read(ifstream &in, long long g_idx){
-    in.seekg(g_idx);
-}
-
-bool prime(long long n){
+bool prime(long long int n){
     bool f = true;
     for (long long i = 2; i<(int)sqrt(n)+1; i++){
         if (n%i==0){
@@ -51,4 +38,31 @@ bool prime(long long n){
         }
     }
     return f;
+}
+
+void exp(int e[]){
+    e[0] = 2;
+    int n = 1000; // кол-во членов ряда суммы обратных факториалов
+
+    for (int i = 2; i <= n; ++i) {
+        int term[DIGITS]={0};
+        term[0] = 1;
+
+        // делю term на i факториал
+        for (int j = 1; j <= i; j++) {
+            int carry = 0;
+            for (int k = 0; k < DIGITS; k++) {
+                int cur = term[k] + carry * 10;
+                term[k] = cur / j;
+                carry = cur % j;
+            }
+        }
+        // собрал всё в массив е
+        int carry = 0;
+        for (int k = DIGITS - 1; k >= 0; k--) {
+            int sum = e[k] + term[k] + carry;
+            e[k] = sum % 10;
+            carry = sum / 10;
+        }
+    }
 }

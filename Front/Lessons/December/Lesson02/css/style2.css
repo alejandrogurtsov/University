@@ -1,5 +1,18 @@
-body{
+body {
     font-family: "Helvetica", sans-serif;
     font-size: 16pt;
     background-color: aliceblue;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }

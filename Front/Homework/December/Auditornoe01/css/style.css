@@ -1,0 +1,33 @@
+body{
+    font-family: "Helvetica", sans-serif;
+    font-size: 16pt;
+    background-color: aliceblue;
+}
+
+.main-frame{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+}
+
+body > div > div {
+    width: 33%;
+}
+
+.img1{
+    display: none;
+    width: 100%;
+}
+.img2{
+    display: none;
+    width: 100%;
+}
+.img3{
+    display: none;
+    width: 100%;
+}

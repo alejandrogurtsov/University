@@ -7,6 +7,35 @@
 
 </head>
 <body>
+<table id="myTable">
+  <tr>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+</table>
 
+<script>
+  function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+
+  const table = document.getElementById('myTable');
+  table.addEventListener('click', (event) => {
+    if (event.target.tagName === 'TD') {
+      event.target.style.backgroundColor = getRandomColor();
+    }
+  });
+</script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Аудиторное</title>
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main-frame">
+	<div>
+		<p id="f1">Птица 1</p>
+		<img class="img1" src="./img/photo1.jpeg">
+	</div>
+	<div>
+		<p id="f2">Птица 2</p>
+		<img class="img2" src="./img/photo2.jpeg">
+	</div>
+	<div>
+		<p id="f3">Птица 3</p>
+		<img class="img3" src="./img/photo3.jpeg">
+	</div>
+</div>
+
+<script>
+document.querySelectorAll("p").forEach(p => {
+	p.addEventListener("mousedown", () =>{
+		p.parentElement.querySelector("img").style.display = "block";
+	});
+	p.addEventListener("mouseup", () => {
+		p.parentElement.querySelector("img").style.display = "none";
+	});
+	p.addEventListener("mouseleave", () => {
+		p.parentElement.querySelector("img").style.display = "none";
+	});
+});
+</script>
+</body>
+</html>
